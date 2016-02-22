@@ -1,8 +1,8 @@
-/// <reference path="../phaser/typescript/phaser.d.ts" />
+/// <reference path="../../phaser/typescript/phaser.d.ts" />
 
 "use strict";
 
-module Ayasha {
+module M22Shooter {
     export class Game extends Phaser.Game{
         constructor(){
             super({

@@ -1,4 +1,4 @@
-module Ayasha {
+module M22Shooter {
 
     export class Preloader extends Phaser.State {
 
@@ -10,14 +10,7 @@ module Ayasha {
             this.preloadBar = this.add.sprite(200, 250, 'loader');
             this.load.setPreloadSprite(this.preloadBar);
 
-            //  Load our actual games assets
-            this.load.image('menu-bg', 'graphics/menu-bg.jpg');
-            this.load.spritesheet('cat', 'graphics/cat-sheet.png', 40, 32, 0);
-
-
-        this.load.tilemap('map', 'graphics/tiled/aya001.json', null, Phaser.Tilemap.TILED_JSON)
-            this.load.image('platformer_32_full', 'graphics/tiled/platformer_32_full.png' )
-            //this.load.image('level1', 'assets/level1.png');
+            this.load.image('button', 'graphics/button.png')
 
         }
 

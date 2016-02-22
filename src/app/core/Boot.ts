@@ -1,11 +1,11 @@
 "use strict";
 
 
-module Ayasha {
+module M22Shooter {
     export class Boot extends Phaser.State {
 
         preload(){
-            this.load.image('loader', 'graphics/loader.png');
+            this.load.image('loader', 'graphics/loading-bar.png');
         }
 
         create(){

@@ -1,4 +1,4 @@
-module Ayasha {
+module M22Shooter {
 
     export class Player extends Phaser.Sprite {
 

@@ -1,5 +1,6 @@
 
 
+
 'use strict';
 
 
@@ -7,6 +8,6 @@
 
 window.onload = () => {
 
-    var game = new Ayasha.Game();
+    var game = new M22Shooter.Game();
 
 };
