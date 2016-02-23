@@ -12,12 +12,22 @@ module M22Shooter {
             this.preloadBar = this.add.sprite(200, 250, 'loader');
             this.load.setPreloadSprite(this.preloadBar);
 
-            this.load.image('button', 'graphics/button.png')
-            this.load.image('ship', 'graphics/ship.png')
-            this.load.image('bullet1', 'graphics/bullet1.png')
-            this.load.image('bullet2', 'graphics/bullet2.png')
-            this.load.image('bullet3', 'graphics/bullet3.png')
+            this.load.image('button', 'assets/graphics/button.png')
+            this.load.image('ship', 'assets/graphics/ship.png')
+            this.load.image('bullet1', 'assets/graphics/bullet1.png')
+            this.load.image('bullet2', 'assets/graphics/bullet2.png')
+            this.load.image('bullet3', 'assets/graphics/bullet3.png')
+            this.load.image('enemy1', 'assets/graphics/enemy1.png')
+            this.load.image('enemy2', 'assets/graphics/enemy2.png')
+            this.load.image('enemy3', 'assets/graphics/enemy3.png')
 
+            this.load.bitmapFont('informa', 'assets/fonts/informa.png', 'assets/fonts/informa.xml');
+
+            this.load.spritesheet('kaboom', 'assets/graphics/explode.png', 128, 128);
+
+            this.load.audio('explosion', 'assets/audio/explosion.mp3');
+            this.load.audio('blaster', 'assets/audio/blaster.mp3');
+            this.load.audio('laser', 'assets/audio/laser.wav');
         }
 
         create() {

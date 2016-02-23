@@ -22,9 +22,18 @@ module M22Shooter {
 
         }
 
+        enemyHit(enemy: Enemy){
+            this.health = (this.health - (enemy.scale.x * 10) / 100)
+            enemy.kill()
+        }
+
+        getHealthText(){
+            return 'Health: ' + (Math.floor(this.health * 1000) / 10) + '%'
+        }
 
         update() {
 
+            if(!this.alive) return
             if (this.x > this.game.width) this.x = 0;
             if (this.x < 0) this.x = this.game.width;
             if (this.y > this.game.height) this.y = 0;
@@ -64,5 +73,7 @@ module M22Shooter {
                 this.gun.shoot()
             }
         }
+
+
     }
 }

@@ -3,20 +3,22 @@
  */
 "use strict";
 
-module M22Shooter{
-    export class Gun extends Phaser.Group{
+module M22Shooter {
+    export class Gun extends Phaser.Group {
 
-        static SHOT_DELAY: number = 100
-        static BULLET_SPEED: number = 500
-        static NUMBER_OF_BULLETS: number = 20
+        static SHOT_DELAY:number = 100
+        static BULLET_SPEED:number = 500
+        static NUMBER_OF_BULLETS:number = 20
 
-        lastBulletShotAt: number
-        
-        
+        lastBulletShotAt:number
 
-        constructor(public game: Phaser.Game, public owner: Phaser.Sprite){
+        shotSound:Phaser.Sound
+
+
+        constructor(public game:Phaser.Game, public owner:Phaser.Sprite) {
             super(game);
-            for(var i = 0; i < Gun.NUMBER_OF_BULLETS; i++) {
+            this.shotSound = this.game.add.audio('blaster');
+            for (var i = 0; i < Gun.NUMBER_OF_BULLETS; i++) {
                 // Create each bullet and add it to the group.
                 var bullet = this.game.add.sprite(0, 0, 'bullet1');
                 this.add(bullet);
@@ -43,8 +45,6 @@ module M22Shooter{
             if (this.game.time.now - this.lastBulletShotAt < Gun.SHOT_DELAY) return;
             this.lastBulletShotAt = this.game.time.now;
 
-
-
             // Get a dead bullet from the pool
             let bullet = this.getFirstDead();
 
@@ -67,10 +67,11 @@ module M22Shooter{
             bullet.reset(this.owner.x, this.owner.y);
             bullet.rotation = this.owner.rotation;
 
-            
+
             // Shoot it in the right direction
             bullet.body.velocity.x = Math.sin(bullet.rotation) * Gun.BULLET_SPEED;
             bullet.body.velocity.y = -1 * Math.cos(bullet.rotation) * Gun.BULLET_SPEED;
+            this.shotSound.play()
         }
     }
 }

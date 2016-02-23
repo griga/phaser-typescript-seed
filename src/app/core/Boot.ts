@@ -5,7 +5,7 @@ module M22Shooter {
     export class Boot extends Phaser.State {
 
         preload(){
-            this.load.image('loader', 'graphics/loading-bar.png');
+            this.load.image('loader', 'assets/graphics/loading-bar.png');
         }
 
         create(){
