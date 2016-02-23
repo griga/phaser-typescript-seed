@@ -32,7 +32,7 @@ module M22Shooter {
                 this.scale.refresh();
             }
 
-            this.game.physics.startSystem(Phaser.Physics.ARCADE)
+            this.game.physics.startSystem(Phaser.Physics.ARCADE);
 
             this.game.state.start('Preloader', true, false);
         }

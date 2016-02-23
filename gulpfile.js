@@ -26,6 +26,7 @@ gulp.task('ts', function () {
         }))
         .on('error', util.log)
         .pipe(gulp.dest(destinations.ts))
+        .pipe(connect.reload())
 });
 
 gulp.task('watch', function(){
@@ -34,7 +35,8 @@ gulp.task('watch', function(){
 
 gulp.task('connect', function() {
     connect.server({
-        port: 42427
+        port: 42427,
+        livereload: true
     });
 });
 

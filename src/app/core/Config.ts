@@ -5,6 +5,6 @@
 
 module M22Shooter{
     export const Config = {
-        DEBUG: false
+        DEBUG: true
     }
 }

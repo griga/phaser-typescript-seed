@@ -1,4 +1,5 @@
-/// <reference path="../../phaser/typescript/phaser.d.ts" />
+/// <reference path="../../typings/phaser.d.ts" />
+/// <reference path="../../typings/lodash.d.ts" />
 
 "use strict";
 
