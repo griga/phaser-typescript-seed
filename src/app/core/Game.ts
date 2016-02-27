@@ -3,7 +3,7 @@
 
 "use strict";
 
-module M22Shooter {
+module M22Games {
     export class Game extends Phaser.Game{
         constructor(){
             super({

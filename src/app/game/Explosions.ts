@@ -3,7 +3,7 @@
  */
 
 
-module M22Shooter {
+module M22Games {
     export class Explosions extends Phaser.Group {
 
         explosionSound: Phaser.Sound;

@@ -3,7 +3,7 @@
  */
 
 
-module M22Shooter{
+module M22Games{
     export const Config = {
         DEBUG: true
     }

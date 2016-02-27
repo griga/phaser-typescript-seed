@@ -8,6 +8,6 @@
 
 window.onload = () => {
 
-    var game = new M22Shooter.Game();
+    var game = new M22Games.Game();
 
 };

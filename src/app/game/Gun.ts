@@ -3,7 +3,7 @@
  */
 "use strict";
 
-module M22Shooter {
+module M22Games {
     export class Gun extends Phaser.Group {
 
         static SHOT_DELAY:number = 100

@@ -1,8 +1,8 @@
-module M22Shooter {
+module M22Games {
 
     export class Player extends Phaser.Sprite {
 
-        gun: M22Shooter.Gun
+        gun: M22Games.Gun
         constructor(game:Phaser.Game) {
 
             let x:number = game.width / 2 - 20;
@@ -18,7 +18,7 @@ module M22Shooter {
             this.angle = 0; // Point the ship up
 
 
-            this.gun = new M22Shooter.Gun(game, this)
+            this.gun = new M22Games.Gun(game, this)
 
         }
 

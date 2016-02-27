@@ -3,7 +3,7 @@
  */
 
 
-module M22Shooter {
+module M22Games {
     export class Enemies extends Phaser.Group{
 
         static MAX_COUNT: Number = 20

@@ -1,6 +1,6 @@
 
 
-module M22Shooter {
+module M22Games {
 
     export class Preloader extends Phaser.State {
 

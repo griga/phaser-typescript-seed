@@ -1,7 +1,7 @@
 "use strict";
 
 
-module M22Shooter {
+module M22Games {
 
     export class MainMenu extends Phaser.State {
 

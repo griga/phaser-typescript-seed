@@ -3,7 +3,7 @@
  */
 
 
-module M22Shooter{
+module M22Games{
     export class Enemy extends Phaser.Sprite{
 
         constructor(game: Phaser.Game){

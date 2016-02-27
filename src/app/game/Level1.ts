@@ -1,4 +1,4 @@
-module M22Shooter {
+module M22Games {
 
     export class Level1 extends Phaser.State {
 
@@ -114,7 +114,7 @@ module M22Shooter {
         }
 
         render() {
-            if (M22Shooter.Config.DEBUG) {
+            if (M22Games.Config.DEBUG) {
                 //this.game.debug.spriteBounds(this.player)
             } else {
 
