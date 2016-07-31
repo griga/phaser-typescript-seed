@@ -1,3 +1,5 @@
 # phaser-typescript-seed
 
-npm install gulp gulp-connect gulp-typescript
+
+npm install systemjs phaser
+npm install gulp gulp-connect gulp-typescript --save-dev
